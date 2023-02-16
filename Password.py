@@ -64,7 +64,6 @@ def Passwordprog():
                     break
             if stored_password == password_encoded:
                 print("Password already existed.")
-                break
         else:
             print("your password is invalid")
             
