@@ -53,15 +53,22 @@ def Passwordprog():
                 storage[username] = password_encoded
                 with open("storage.json", "a") as f:
                     json.dump(storage, f)
+                
                 print('do you want to see the password store(yes or no) :')
                 data = input()
                 if data == "yes":
                     print(storage)
-                print('do you want to put a new password ?(yes or no)')
-                new = input()
-                if new == 'no':
-                    print("goodbye")
-                    break
+                    print('do you want to put a new password ?(yes or no)')
+                    new = input()
+                    if new == 'no':
+                        print("goodbye")
+                        break
+                else:
+                    print('do you want to put a new password ?(yes or no)')
+                    new = input()
+                    if new == 'no':
+                        print("goodbye")
+                        break
             if stored_password == password_encoded:
                 print("Password already existed.")
         else:
