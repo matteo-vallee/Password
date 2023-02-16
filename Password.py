@@ -57,8 +57,8 @@ def Passwordprog():
                 data = input()
                 if data == "yes":
                     print(storage)
-                    print('do you want to put a new password ?(yes or no)')
-                    new = input()
+                print('do you want to put a new password ?(yes or no)')
+                new = input()
                 if new == 'no':
                     print("goodbye")
                     break
